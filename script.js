@@ -445,3 +445,24 @@ requestAnimationFrame(animateReactor)
 animateReactor()
 
 }
+
+function openWorkflow(){
+const modal = document.getElementById("workflowModal");
+const viewer = document.getElementById("pdfViewer");
+
+viewer.src = "files/Atomic Endurance Research Workflow.pdf";
+modal.style.display = "flex";
+}
+
+function closeWorkflow(){
+const modal = document.getElementById("workflowModal");
+const viewer = document.getElementById("pdfViewer");
+
+viewer.src = "";
+modal.style.display = "none";
+}
+
+function downloadPDF(){
+window.open("files/Atomic Endurance Research Workflow.pdf","_blank");
+}
+
