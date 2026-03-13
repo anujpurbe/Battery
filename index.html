@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Atomic Endurance</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+</head>
+
+<body>
+<div class="scroll-progress"></div>
+
+<div id="particles-js"></div>
+<div class="energy-wave"></div>
+<nav class="navbar">
+
+<div class="logo">⚛ Atomic Endurance</div>
+
+<ul class="nav-links">
+<li><a href="#hero">Home</a></li>
+<li><a href="#problem">Problem</a></li>
+<li><a href="#timeline">Evolution</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#workflow">Development</a></li>
+<li><a href="#comparison">Comparison</a></li>
+<li><a href="#future">Future</a></li>
+</ul>
+
+</nav>
+
+
+<section class="hero" id="hero">
+
+<div class="hero-left">
+
+<h1 class="hero-title">Atomic Endurance</h1>
+
+<p class="hero-subtitle">
+Redefining the Battery for the Next Century
+</p>
+
+<p class="hero-desc">
+A next-generation energy storage concept designed to deliver higher
+energy density, longer lifespan and safer power systems using
+advanced materials and nanotechnology.
+</p>
+
+<div class="hero-buttons">
+
+<button class="btn-primary" onclick="openWorkflow()">
+View Workflow
+</button>
+
+<a href="about.html" class="btn-secondary">
+Meet the team
+</a>    
+
+</div>
+
+<div class="hero-stats">
+
+<div class="stat">
+<h3>3x</h3>
+<p>Energy Density</p>
+</div>
+
+<div class="stat">
+<h3>50%</h3>
+<p>Faster Charging</p>
+</div>
+
+<div class="stat">
+<h3>3000+</h3>
+<p>Charge Cycles</p>
+</div>
+
+</div>
+<div class="scroll-indicator"
+onclick="document.getElementById('problem').scrollIntoView({behavior:'smooth'})">
+
+<span></span>
+
+</div>
+</div>
+
+<div class="hero-right">
+
+<div class="battery-hud">
+
+<img src="images/hero-battery.png" class="hero-img">
+
+<div class="ring ring1"></div>
+<div class="ring ring2"></div>
+
+<div class="energy-lines">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="timeline">
+
+<h2>Evolution of Battery Technology</h2>
+
+<div class="timeline-vertical">
+
+<div class="timeline-item">
+
+<div class="timeline-content">
+<img src="images/voltaic.jpg">
+<h3>1800 – Voltaic Pile</h3>
+<p>The first true battery invented by Alessandro Volta that produced continuous electrical current.</p>
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-content">
+<img src="images/leadacid.jpg">
+<h3>1859 – Lead Acid Battery</h3>
+<p>The first rechargeable battery widely used in automobiles and backup power systems.</p>
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-content">
+<img src="images/nicd.jpg">
+<h3>1899 – Nickel Cadmium</h3>
+<p>Rechargeable battery technology known for durability and industrial applications.</p>
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-content">
+<img src="images/liion.jpg">
+<h3>1991 – Lithium Ion Battery</h3>
+<p>The dominant battery technology powering modern electronics and electric vehicles.</p>
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-content">
+<img src="images/solidstate.jpg">
+<h3>Future – Solid State Batteries</h3>
+<p>Next-generation battery technology offering higher energy density and improved safety.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+<div class="section-divider"></div>
+
+<section id="problem">
+
+<h2>The Problem with Current Batteries</h2>
+
+<p>
+Modern society relies heavily on batteries to power electronic devices,
+electric vehicles, renewable energy storage systems, and many portable
+technologies. Batteries have become an essential component of modern
+infrastructure because they allow energy to be stored and used when needed.
+However, despite decades of scientific advancement, existing battery
+technologies still face several important limitations.
+</p>
+
+<p>
+One of the major challenges is limited energy density. Energy density refers
+to the amount of energy that can be stored in a given volume or mass of a
+battery. Devices with higher energy density batteries can operate for longer
+periods without increasing battery size or weight. Although lithium-ion
+batteries currently dominate the market, researchers are continuously working
+to improve their storage capacity and efficiency.
+</p>
+
+<p>
+Another significant issue is battery degradation over time. During repeated
+charging and discharging cycles, chemical reactions inside the battery slowly
+damage internal materials. This reduces the battery’s capacity to store
+energy, which eventually decreases the overall performance of electronic
+devices and vehicles.
+</p>
+
+<p>
+Safety concerns are also an important factor in battery development. Some
+batteries may experience overheating due to internal reactions or external
+conditions. In extreme cases, this can lead to thermal runaway, which may
+result in fire or device damage. For this reason, researchers are exploring
+new materials and battery designs that provide better thermal stability and
+improved safety.
+</p>
+
+<p>
+Additionally, environmental sustainability is becoming an important concern.
+The extraction of certain battery materials such as lithium, cobalt, and
+nickel can have environmental and economic impacts. Developing safer and more
+sustainable energy storage technologies is therefore an important goal for
+future research.
+</p>
+
+<ul>
+<li>Limited energy storage capacity</li>
+<li>Degradation after repeated charging cycles</li>
+<li>Thermal instability in certain battery types</li>
+<li>Environmental impact of battery materials</li>
+<li>Need for more sustainable energy storage solutions</li>
+</ul>
+
+</section>
+
+<div class="section-divider"></div>
+
+<section id="concept">
+
+<h2>The Atomic Endurance Concept</h2>
+
+<p>
+The Atomic Endurance concept represents a theoretical approach to designing
+next-generation battery systems. The idea focuses on improving energy storage
+performance by combining advanced materials, nanotechnology, and optimized
+battery architectures. The objective is to develop a battery that offers
+higher energy density, longer lifespan, and improved safety compared to
+traditional battery systems.
+</p>
+
+<p>
+One key aspect of this concept is the use of nanostructured electrode
+materials. Nanomaterials have extremely small structures at the atomic or
+molecular scale. These structures can increase the surface area available
+for electrochemical reactions, which may improve the movement of ions
+through the battery and increase overall efficiency.
+</p>
+
+<p>
+Another important component of the Atomic Endurance design is the use of
+solid-state electrolytes. Conventional batteries often use liquid
+electrolytes that allow ions to travel between electrodes. However, liquid
+electrolytes can sometimes lead to leakage or instability. Solid-state
+electrolytes offer improved thermal stability and can reduce safety risks.
+</p>
+
+<p>
+The concept also focuses on optimizing ion transport pathways inside the
+battery. Efficient ion movement between the anode and cathode can improve
+charging speed and reduce energy losses during operation. By combining these
+advanced design strategies, the Atomic Endurance battery concept aims to
+represent a potential future direction in battery technology research.
+</p>
+
+<ul>
+<li>Advanced nano-material electrodes</li>
+<li>Solid-state electrolyte design</li>
+<li>Improved ion mobility</li>
+<li>Enhanced thermal stability</li>
+
+</ul>
+
+</section>
+
+<div class="section-divider"></div>
+
+<section id="research">
+
+<h2>Research and Technical Analysis</h2>
+
+<p>
+Research in battery science involves multiple scientific disciplines,
+including electrochemistry, materials science, nanotechnology, and
+electrical engineering. Scientists study how ions move between the
+anode and cathode during charging and discharging processes.
+</p>
+
+<p>
+Many researchers are currently investigating new electrode materials
+that can store more energy and maintain stability over long periods
+of use. Graphene, silicon-based anodes, and lithium-metal materials
+are examples of promising candidates being explored in modern battery
+research.
+</p>
+
+<p>
+Another important research area focuses on battery management systems
+(BMS). These systems monitor temperature, voltage, and charging
+conditions to ensure safe operation of battery packs in devices such
+as electric vehicles and large energy storage systems.
+</p>
+
+<p>
+Through experimental studies, computer simulations, and prototype
+testing, researchers aim to develop more efficient and environmentally
+sustainable battery technologies.
+</p>
+
+</section>
+
+<div class="section-divider"></div>
+
+<section id="workflow">
+
+<h2>Development Workflow</h2>
+
+<div class="workflow-container">
+
+<div class="workflow-step">
+<h3>1. Problem Identification</h3>
+<p>Identify limitations of current battery technologies.</p>
+</div>
+
+<div class="workflow-step">
+<h3>2. Research & Technical Analysis</h3>
+<p>Study lithium-ion batteries, nanomaterials and solid-state batteries.</p>
+</div>
+
+<div class="workflow-step">
+<h3>3. Concept Development</h3>
+<p>Design the Atomic Endurance battery concept.</p>
+</div>
+
+<div class="workflow-step">
+<h3>4. System Architecture Design</h3>
+<p>Create internal battery structure including electrodes and electrolytes.</p>
+</div>
+
+<div class="workflow-step">
+<h3>5. Simulation & Testing</h3>
+<p>Simulate charge cycles and thermal stability.</p>
+</div>
+
+<div class="workflow-step">
+<h3>6. Performance Evaluation</h3>
+<p>Compare performance with existing battery technologies.</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="section-divider"></div>
+
+<section id="quantum-field">
+
+<h2>Quantum Energy Reactor</h2>
+
+<div class="reactor-container">
+    <canvas id="reactorCanvas"></canvas>
+</div>
+
+<p class="reactor-desc">
+This visualization represents the conceptual energy field inside
+the Atomic Endurance battery system where energy flows through
+nanostructured materials and optimized ion pathways.
+</p>
+
+</section>
+
+<div class="section-divider"></div>
+
+<section id="performance">
+
+<h2>Performance Goals</h2>
+
+<p>
+The performance of a battery system is typically evaluated using
+several important parameters. These include energy density, charging
+speed, cycle life, and overall safety. Improving these parameters
+is the main objective of next-generation battery research.
+</p>
+
+<p>
+Higher energy density allows batteries to store more energy within
+the same size or weight. This is especially important for portable
+electronics and electric vehicles, where compact energy storage is
+essential.
+</p>
+
+<p>
+Faster charging capability is another major research focus. Modern
+users expect devices to recharge quickly while maintaining battery
+health over long periods of use.
+</p>
+
+<p>
+Cycle life refers to the number of charge-discharge cycles a battery
+can complete before its capacity significantly decreases. Increasing
+cycle life helps reduce waste and improves the long-term sustainability
+of battery technology.
+</p>
+
+</section>
+
+<div class="section-divider"></div>
+
+<section id="comparison">
+
+<h2>Battery Technology Comparison</h2>
+
+<p>
+Different battery technologies offer varying levels of energy density,
+safety, lifespan, and charging performance. The Atomic Endurance concept
+aims to improve upon these existing technologies.
+</p>
+
+<table class="battery-table">
+
+<tr>
+<th>Battery Type</th>
+<th>Energy Density</th>
+<th>Recharge Cycles</th>
+<th>Safety</th>
+<th>Applications</th>
+</tr>
+
+<tr>
+<td>Lead-Acid</td>
+<td>Low</td>
+<td>300-500</td>
+<td>Moderate</td>
+<td>Automobiles, Backup Power</td>
+</tr>
+
+<tr>
+<td>Nickel-Cadmium</td>
+<td>Medium</td>
+<td>1000+</td>
+<td>Good</td>
+<td>Industrial Devices</td>
+</tr>
+
+<tr>
+<td>Lithium-Ion</td>
+<td>High</td>
+<td>500-1500</td>
+<td>Moderate</td>
+<td>Phones, Laptops, EVs</td>
+</tr>
+
+<tr>
+<td>Solid-State</td>
+<td>Very High</td>
+<td>2000+</td>
+<td>Excellent</td>
+<td>Future Electric Vehicles</td>
+</tr>
+
+<tr>
+<td><b>Atomic Endurance</b></td>
+<td><b>Ultra High</b></td>
+<td><b>3000+</b></td>
+<td><b>Superior</b></td>
+<td><b>Future Energy Systems</b></td>
+</tr>
+
+</table>
+
+</section>
+    
+<div class="section-divider"></div>
+
+<section id="future">
+
+<h2>Future Applications</h2>
+
+<p>
+Future battery technologies such as the Atomic Endurance concept have the
+potential to significantly influence many industries. As global demand for
+energy storage continues to grow, more efficient and reliable battery
+systems will become increasingly important for technological development.
+</p>
+
+<p>
+Electric vehicles represent one of the most important applications for
+advanced battery systems. Improved energy density could allow vehicles to
+travel longer distances on a single charge, while faster charging
+capabilities would reduce waiting times for users. These improvements would
+support the global transition toward cleaner transportation systems.
+</p>
+
+<p>
+Renewable energy systems also rely heavily on battery storage. Solar and
+wind energy sources do not generate electricity continuously, so energy must
+be stored when production is high and used when production is low. Advanced
+battery technologies can help stabilize renewable energy systems and make
+them more reliable.
+</p>
+
+<p>
+Additional applications include aerospace technology, satellite power
+systems, smart grid infrastructure, and portable medical devices. In these
+fields, reliable and efficient energy storage is essential for continuous
+operation and safety.
+</p>
+
+<p>
+As research continues to advance, future battery technologies may play a
+central role in supporting sustainable energy systems and enabling new
+technological innovations.
+</p>
+
+<ul>
+
+<li>Electric vehicles with longer driving range</li>
+<li>Renewable energy storage for solar and wind power</li>
+<li>Aerospace and satellite power systems</li>
+<li>Portable electronics with extended battery life</li>
+<li>Smart grid energy storage infrastructure</li>
+
+</ul>
+
+</section>
+    
+<div class="section-divider"></div>
+
+<section id="conclusion">
+
+<h2>Conclusion</h2>
+
+<p>
+Battery technology is a fundamental component of modern technological
+development. From portable electronics to renewable energy storage,
+batteries enable many systems that support daily life and global
+infrastructure.
+</p>
+
+<p>
+The Atomic Endurance concept represents a theoretical framework for
+future battery development. By combining nanomaterial engineering,
+solid-state electrolytes, and improved system design, this concept
+aims to overcome many limitations of current battery technologies.
+</p>
+
+<p>
+Although further research and experimentation are required before such
+systems become practical, the study of advanced battery architectures
+remains an important field of scientific innovation.
+</p>
+
+<p>
+Continued progress in battery research will contribute to sustainable
+energy solutions and support the growing demand for efficient and
+reliable energy storage systems.
+</p>
+
+</section>
+
+<footer class="footer">
+
+<div class="footer-glow"></div>
+
+<div class="footer-container">
+
+<div class="footer-left">
+<h2>⚛ Atomic Endurance</h2>
+<p>
+Next-generation battery technology focused on higher energy density,
+longer lifespan, and sustainable energy systems.
+</p>
+</div>
+
+<div class="footer-links">
+<h3>Navigation</h3>
+<a href="#hero">Home</a>
+<a href="#problem">Problem</a>
+<a href="#timeline">Evolution</a>
+<a href="#research">Research</a>
+<a href="#future">Future</a>
+</div>
+
+<div class="footer-tech">
+<h3>Core Technologies</h3>
+<p>Nanomaterial Electrodes</p>
+<p>Solid-State Batteries</p>
+<p>Energy Simulation</p>
+<p>Battery AI Optimization</p>
+</div>
+
+<div class="footer-energy">
+
+<h3>Energy Core</h3>
+
+<div class="energy-core">
+
+<div class="core"></div>
+
+<div class="orbit orbit1"></div>
+<div class="orbit orbit2"></div>
+<div class="orbit orbit3"></div>
+
+</div>
+
+<p class="energy-text">Quantum Energy Stabilized</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>⚡ Atomic Endurance Technology © 2026</p>
+</div>
+
+</footer>
+<div id="workflowModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeWorkflow()">×</span>
+
+<h2>Atomic Endurance Development Workflow</h2>
+
+<a href="files/workflow.jpeg" target="_blank">
+<img src="files/workflow.jpeg" class="workflow-img">
+</a>
+
+<a href="images/workflow.jpg" download class="download-icon">
+📥
+</a>
+
+</div>
+
+</div>
+
+<div id="zoomOverlay" class="zoom-overlay">
+<img id="zoomedImage">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
